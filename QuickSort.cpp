@@ -5,6 +5,8 @@
 
 using namespace std;
 //quick sort sorting algorithm
+
+
 typedef struct record{
     string Direction;
     int Year;
@@ -59,47 +61,4 @@ void QuickSort(vector <Record> &Data, int s, int e)
 }
 
 
-
-int main(){
-vector <Record> Data;
-
-Record rec1, rec2, rec3;
-
-
-rec1.Cumulative = 467657347;
-rec2.Cumulative = 405834737;
-rec3.Cumulative = 739244729;
-
-Data.push_back(rec1);        //to replace them with iterative method for pushing back to vector the Cumulatives.
-Data.push_back(rec2);
-Data.push_back(rec3);
-
-
-
-cout<<"Before Sorting:"<<endl;
-for(int i=0; i<Data.size(); i++)
-    {
-
-        cout<<Data.at(i).Cumulative<<" ";
-
-    }
-cout<<endl;
-
-QuickSort(Data, 0, (Data.size()-1));
-
-cout<<"After Sorting:"<<endl;
-for(int i=0; i<Data.size(); i++)
-    {
-
-        cout<<Data.at(i).Cumulative<<" ";
-
-    }
-
-
-
-
-return 0;
-
-
-}
 
