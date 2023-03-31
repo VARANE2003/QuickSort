@@ -47,27 +47,6 @@ void QuickSort(vector <Record> &Data, int s, int e)
 }
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 void insertData(int counter, string token, vector<Record>& Data){
     switch (counter)
     {
